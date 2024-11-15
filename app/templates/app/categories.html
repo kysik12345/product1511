@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+{% endblock %}
+{% block header %}
+Список категорий
+{% endblock %}
+
+{% block main %}
+
+        <li>Category</li>
+{% for category in categories %}
+<ol>
+
+        <li>{{ category.name }}</li>
+</ol>
+{% endfor %}
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
