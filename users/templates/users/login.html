@@ -1,0 +1,10 @@
+{% block content %}
+<h3>Авторизация пользователя</h3>
+<h2>Пожалуйста, заполните форму входа на сайт:</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Войти</button>
+</form>
+ <a href="{% url 'logout' %}">Выход</a>
+{% endblock content %}
